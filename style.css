@@ -1,0 +1,22 @@
+#container1{
+    background-color: rgb(242, 237, 237);
+    font-weight: bold;
+    width: 500px;
+    color: rgb(27, 152, 110);
+}
+#container{
+    background-color: rgb(101, 100, 97);
+    
+    width: 500px;
+    padding: 20px;
+}
+.time{
+    margin-left: 7rem;
+    /* font-weight: bold; */
+    float: right;
+    padding: 2px;
+    color: rgb(160, 2, 2);
+}
+.train{
+    color: rgb(16, 14, 18);
+}
