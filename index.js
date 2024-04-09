@@ -12,7 +12,7 @@ function printinput()
 }
 const getInfo = async () => {
     try {
-        let response = await fetch('https://erail.in/rail/getTrains.aspx?Station_From=NDLS&Station_To=BCT&DataSource=0&Language=0&Cache=true'); 
+        let response = await fetch(URL); 
         if (response.ok) {
             let data = await response.json(); 
             for(let i=0;i<42;i++)
