@@ -3,8 +3,12 @@ var from, to, URL;
 btn.addEventListener("click", printinput);
 function printinput() {
     event.preventDefault();
-    from = document.getElementsByTagName("input")[0].value;
-    to = document.getElementsByTagName("input")[1].value;
+    from = document.getElementById('sourcestation').value;
+    to = document.getElementById('tostation').value;
+    from = from.split("•")[1]
+    to = to.split("•")[1]
+    console.log(from)
+    console.log(to)
     // URL = `https://indian-railway-api.cyclic.app/trains/betweenStations/?from=${from}&to=${to}`;
     URL = `https://erail.in/rail/getTrains.aspx?Station_From=${from}&Station_To=${to}&DataSource=0&Language=0&Cache=true`;
     getInfo();
