@@ -28,7 +28,6 @@ const getInfo = async () => {
                         let trainname = json.data[i].train_base.train_name;
                         let fromtime = json.data[i].train_base.from_time;
                         let totime = json.data[i].train_base.to_time;
-
                         let runningdays = json.data[i].train_base.running_days;
                         let s = "";
                         for (let i = 0; i < runningdays.length; i++) {
@@ -51,14 +50,14 @@ const getInfo = async () => {
                                     <p class="train">${trainname}</p>
                                     <span>${s}</span>
                                     <span class="time">${fromtime} - ${totime}</span>
-                                </div>`
-                        let con = document.getElementById("container");
-                        con.insertAdjacentHTML('beforeend', html);
+                                </div><hr>`
                         let final = trainname + " " + fromtime +" - "+totime + " " +s;
                         let finaltemplate = document.createElement("p");
                         finaltemplate.innerHTML = final;
+                        let con = document.getElementById("inner");
+                        con.insertAdjacentHTML('beforeend', html);
                         div.appendChild(finaltemplate);
-                        // document.body.appendChild(div);
+                        
                     }
             // data.forEach(function);
             // console.log(data.data[0].train_base.train_name)
