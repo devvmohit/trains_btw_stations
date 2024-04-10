@@ -1,22 +1,42 @@
 #container1{
-    background-color: rgb(242, 237, 237);
     font-weight: bold;
-    width: 500px;
     color: rgb(27, 152, 110);
+    margin-top: 1rem;
+    background-color: rgb(246, 244, 244);
+    padding: 1rem;
 }
-#container{
-    background-color: rgb(101, 100, 97);
-    
-    width: 500px;
-    padding: 20px;
+h1{
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-size: 30px;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;   
+}
+
+#outer{
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    height: 170px;
+}
+#inner{
+    position: absolute;
+    top: 2rem;
 }
 .time{
     margin-left: 7rem;
-    /* font-weight: bold; */
+    font-weight: bold;
     float: right;
     padding: 2px;
     color: rgb(160, 2, 2);
 }
 .train{
     color: rgb(16, 14, 18);
-}
+} 
