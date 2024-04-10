@@ -58,7 +58,7 @@ const getInfo = async () => {
                         let finaltemplate = document.createElement("p");
                         finaltemplate.innerHTML = final;
                         div.appendChild(finaltemplate);
-                        document.body.appendChild(div);
+                        // document.body.appendChild(div);
                     }
             // data.forEach(function);
             // console.log(data.data[0].train_base.train_name)
